@@ -1,0 +1,18 @@
+{
+	"Consolelog": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_log",
+		"body": [
+			"console.log('=$RANDOM_HEX=',${1:Переменная})"
+		],
+		"description": "Лог с рандомным указателем"
+	},
+	"Consoleerror": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_err",
+		"body": [
+			"console.error('=$RANDOM_HEX=',${1:Переменная})"
+		],
+		"description": "Лог ошибки с рандомным указателем"
+	}
+}

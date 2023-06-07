@@ -1,0 +1,12 @@
+{
+  "name": "cemjs-microfrontend",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "esbuild --bundle app.tsx --outfile=public/assets/js/out.js --servedir=public --watch"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.19"
+  }
+}

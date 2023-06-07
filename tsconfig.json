@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "jsxFactory": "Cemjsx",
+        "jsxFragmentFactory": "CemjsxFragment",
+        "module": "CommonJS",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+    }
+}
