@@ -7,7 +7,7 @@ const runServe = process.argv.includes("--runServe")
 
 const options = {
     outdir: "public/assets/",
-    entryPoints: [{ in: "app.tsx", out: "js/out" }, { in: "src/assets/scss/style.scss", out: "css/out" }],
+    entryPoints: [{ in: "app.ts", out: "js/out" }, { in: "src/assets/scss/style.scss", out: "css/out" }],
     bundle: true,
     plugins: [
         sassPlugin({

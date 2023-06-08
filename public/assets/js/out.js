@@ -35,6 +35,6 @@
     display: display2
   };
 
-  // app.tsx
+  // app.ts
   load(micro);
 })();
