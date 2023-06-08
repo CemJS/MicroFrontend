@@ -4,9 +4,15 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "esbuild --bundle app.tsx --outfile=public/assets/js/out.js --servedir=public --watch"
+    "build": "node esbuild.mjs",
+    "start": "node esbuild.mjs --runServe"
   },
   "dependencies": {
     "esbuild": "^0.17.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "esbuild-sass-plugin": "^2.9.0",
+    "postcss": "^8.4.24"
   }
 }

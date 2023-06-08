@@ -1,0 +1,43 @@
+/* src/assets/scss/style.scss */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --app-height: 100%;
+}
+html,
+body {
+  height: var(--app-height);
+}
+html {
+  scrollbar-color: #9844b7 transparent;
+  scrollbar-width: thin;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  background: #1D2029;
+  padding: 0 !important;
+  overflow: overlay;
+  color: #ffffff;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #3bade3 0, #576fe6 45%, #9844b7 57%, #ff357f 70%);
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
