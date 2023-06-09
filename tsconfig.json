@@ -29,6 +29,6 @@
         "src/Loader.ts"
     ],
     "include": [
-        "custom.d.ts"
+        "global.d.ts"
     ]
 }

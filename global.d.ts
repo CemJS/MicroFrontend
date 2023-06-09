@@ -18,8 +18,16 @@ declare module "*.jpeg" {
     export default content;
 }
 
+declare namespace global {
+    function s<T>(someObject: T | null | undefined, defaultValue?: T | null | undefined): T;
+}
+
 declare interface Micro {
     name: String,
     loader: Function,
     display: Function
+}
+
+declare namespace global {
+
 }
