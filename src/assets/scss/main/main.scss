@@ -1,27 +1,38 @@
-.test {
-    &__container {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        border-bottom: 1px solid #2D3243;
-        background: #1D2029;
-        z-index: 1000;
-        padding: 0 10px;
-    }
+.welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
 
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1240px;
-        height: 70px;
-        margin: 0 auto;
-        font-weight: 500;
-    }
+.welcome-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    &-auth {
-        color: #1D2029;
+.welcome-title {
+    font-size: 86px;
+    font-family: 'Conthrax', sans-serif;
+}
+
+.logoCem {
+    width: 250px;
+    height: 250px;
+}
+
+
+@media (max-width: 464px) {
+    .welcome-title {
+        font-size: 130px;
     }
 }

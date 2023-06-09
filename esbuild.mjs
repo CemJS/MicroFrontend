@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 const runServe = process.argv.includes("--runServe")
 
 const options = {
+    publicPath: "/assets",
     outdir: "public/assets/",
     entryPoints: [{ in: "app.ts", out: "js/out" }, { in: "src/assets/scss/style.scss", out: "css/out" }],
     bundle: true,

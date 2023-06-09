@@ -1,5 +1,5 @@
-import { loader } from "./loader"
-import { display } from "./display"
+import { loader } from "./Loader"
+import { display } from "./Display"
 
 interface Micro {
     name: String,

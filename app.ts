@@ -1,4 +1,4 @@
 import { load } from "./CemJS";
-import { micro } from "./src/index";
+import { micro } from "./src/Index";
 
 load(micro)

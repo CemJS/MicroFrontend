@@ -5,6 +5,30 @@
         "jsxFragmentFactory": "CemjsxFragment",
         "module": "ES2022",
         "target": "ES2022",
-        "esModuleInterop": true
-    }
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": [
+                "./src/*"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@images/*": [
+                "./src/assets/images/*"
+            ],
+            "@svg/*": [
+                "./src/assets/svg/*.svg"
+            ],
+        },
+    },
+    "files": [
+        "src/Index.ts",
+        "src/Display.tsx",
+        "src/Loader.ts"
+    ],
+    "include": [
+        "custom.d.ts"
+    ]
 }

@@ -1,8 +1,19 @@
 
+interface Static {
+    [elemName: string]: any;
+}
+
+interface Node {
+    tag: String,
+    data: Static | null,
+    children: undefined | any[]
+}
+
 interface Micro {
     name: String,
     loader: Function,
-    display: Function
+    display: Function,
+    Static?: Static
 }
 
 
@@ -21,7 +32,6 @@ const setDataElement = function (data, $el) {
 
 
 const createElement = function (node) {
-    console.log('=7f44ef=', node)
 
     if (typeof node != "object") {
         return document.createTextNode(node)
@@ -49,11 +59,11 @@ const display = (node) => {
 }
 
 export const Cemjsx = (tag: String, data: any, ...children: any[]) => {
-    console.log('=c8622d=', tag, data, children)
     return { tag, data, children }
 }
 
 export const load = async function (micro: Micro) {
+    micro.Static = {}
     await micro.loader()
     const tmp = await micro.display()
     display(tmp)

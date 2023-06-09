@@ -1,15 +1,13 @@
 import { Cemjsx } from "../CemJS"
+import space from '@svg/space.svg'
 
 export const display = function () {
-    console.log('=259a1c=', "Display")
     return (
-        <div class="test">
-            <div class="test__container">
-                <div class="test__content">
-                    Привет CemJS!
-                </div>
+        <div class="welcome">
+            <div class="welcome-container">
+                <h2 class="welcome-title">{this.Static.text}</h2>
+                <img class="logoCem" src={space}></img>
             </div>
-
         </div>
     )
 
