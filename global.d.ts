@@ -27,7 +27,3 @@ declare interface Micro {
     loader: Function,
     display: Function
 }
-
-declare namespace global {
-
-}
