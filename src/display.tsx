@@ -1,4 +1,4 @@
-import { Cemjsx } from "../CemJS"
+import { Cemjsx } from "cemjs-core"
 import space from '@svg/space.svg'
 
 export const display = function () {
