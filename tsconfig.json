@@ -24,9 +24,9 @@
         },
     },
     "files": [
-        "src/Index.ts",
-        "src/Display.tsx",
-        "src/Loader.ts"
+        "src/index.ts",
+        "src/display.tsx",
+        "src/loader.ts"
     ],
     "include": [
         "global.d.ts"

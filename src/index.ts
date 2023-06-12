@@ -1,5 +1,5 @@
-import { loader } from "./Loader"
-import { display } from "./Display"
+import { loader } from "./loader"
+import { display } from "./display"
 
 export const micro: Micro = {
     name: "MicroTest",
