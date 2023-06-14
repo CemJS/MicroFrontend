@@ -13,7 +13,7 @@ const assetsImages = {
     setup(build) {
         build.onResolve({ filter: /.(jpg|jpeg|png|svg)$/ }, (args) => {
             args.path = args.path.replace("@", "")
-            return { path: path.join(path.resolve("src/assets"), args.path) }
+            return { path: path.join(path.resolve("assets"), args.path) }
         })
     }
 }
@@ -22,7 +22,7 @@ const assetsFonts = {
     name: "assets-fonts",
     setup(build) {
         build.onResolve({ filter: /.(woff|woff2|eot|ttf)$/ }, (args) => {
-            return { path: path.join(path.resolve("src/assets"), args.path) }
+            return { path: path.join(path.resolve("assets"), args.path) }
         })
     }
 }
@@ -30,7 +30,7 @@ const assetsFonts = {
 const options = {
     publicPath: "/assets",
     outdir: "public/assets/",
-    entryPoints: [{ in: "app.ts", out: "js/out" }, { in: "src/assets/scss/style.scss", out: "css/out" }],
+    entryPoints: [{ in: "app.ts", out: "js/out" }, { in: "assets/scss/style.scss", out: "css/out" }],
     bundle: true,
     loader: {
         '.woff': 'file',
