@@ -1,4 +1,4 @@
-import { Cemjsx } from "cemjs-core"
+import { Cemjsx } from "cemjs-all"
 
 export const display = function () {
     return (
